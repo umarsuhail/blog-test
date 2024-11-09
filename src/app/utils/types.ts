@@ -1,12 +1,22 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-type Post = {
-        "userId": number
-        "id": number,
-        "title": string,
-        "body": string
+
+export type Post = {
+    "userId": number
+    "id": number,
+    "title": string,
+    "body": string
 }
-type Card={
-        "userId": number
-        "description": string,
-        "title": string,
+
+export type Card = {
+    "postId": number,
+    "userId": number
+    "description": string,
+    "title": string,
+}
+
+export type Comment = {
+    "postId": number,
+    "id": number
+    "name": string,
+    "email": string,
+    "body":string
 }
